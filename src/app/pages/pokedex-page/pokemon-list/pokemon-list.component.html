@@ -1,0 +1,9 @@
+<h1>Gotta catch em all</h1>
+<div *ngFor="let pokemon of pokemons; let i=index">
+  <p>{{pokemon.name}}</p>
+  <img src="{{pokemon.imageUrl}}" alt="img" />
+  <div>
+    <button (click)="checkDetails(pokemon)">Téma cette beauté</button>
+  </div>
+
+</div>
